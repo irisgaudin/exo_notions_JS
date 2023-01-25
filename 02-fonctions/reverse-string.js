@@ -13,11 +13,11 @@ Finally, the code calls the function with two different string inputs "Le Reacte
 
 const reverseString = (str) => {
   result = "";
-  for (let i = 0; i < str.length; i--) {
-    result = charAt(str);
+  for (let i = str.length; i >= 0; i--) { //for (let *debut de la boucle*; *quand s'arrete la boucle*;*que fait la boucle *)
+    result += str.charAt(i);
   }
   return result;
 };
 console.log(reverseString("I love Code"));
 
-console.log("yoyo")
+
