@@ -1,3 +1,5 @@
+//REFAIRE ! 
+
 //in : deux nombre entiers (num,power)
 // out : resultat de num exposant power SANS Math.pow
 
