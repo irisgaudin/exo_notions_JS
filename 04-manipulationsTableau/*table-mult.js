@@ -9,13 +9,15 @@ function tableMult(num) {
   let int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   if (num < 0) {
     return "Vous devez entrer un nombre positif";
+  } else if (isNaN(num) === true) {
+    return "Vous devez entrer un nombre";
   } else if (Number.isInteger(num) === false) {
     return "Vous devez entrer un nombre entier";
   } else if (Number.isInteger(num) === true) {
     for (let i = 0; i < int.length; i++) {
       int[i] = int[i] * num;
     }
-    return i + " * " + num + " = " + int + "\n";
+    return int;
   }
 }
 
