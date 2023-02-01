@@ -24,3 +24,4 @@ console.log(numberToLetter(35)); // thirty-five
 console.log(numberToLetter("ABC")); //put a number
 console.log(numberToLetter("32.9")); //put an integer
 console.log(numberToLetter(-8)); //put a positive number
+ 
