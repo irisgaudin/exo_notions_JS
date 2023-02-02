@@ -8,7 +8,10 @@
 */
 
 // Début de votre code
-const head = (num) => {};
+const head = (arr) => {
+  let first = arr.shift();
+  return first;
+};
 // Fin de votre code
 
 console.log(head([2, 3, 4])); // Doit afficher `2`
