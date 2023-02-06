@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API PRACTICE</title>
+  </head>
+  <p>boredApi</p>
+  <p id="activity"></p>
+
+  <body>
+    <script>
+      //fetch l'url
+      //.then pour convertir en json
+      //.then pour afficher le data que l'on veut + relier au html
+      //.catch pour afficher un console.error si il y a erreur
+
+      fetch("http://www.boredapi.com/api/activity/")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          const fetchActivity = data.activity;
+          document.getElementById("activity").innerHTML = fetchActivity;
+        })
+        .catch(function (error) {
+          console.error("EROREUH", error);
+        });
+    </script>
+  </body>
+</html>
